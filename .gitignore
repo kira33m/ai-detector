@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+data_mvp/
+models/
+.env
+*.pyc
+*.pyo
+*.pt
+*.csv
+reports/
+.idea/
