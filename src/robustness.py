@@ -130,7 +130,7 @@ def run_robustness():
     # ── JPEG сжатие ──
     print("\n🗜️  JPEG Robustness:")
     for quality in JPEG_QUALITIES:
-        distort_fn = JPEGDistort(quality)          # класс вместо lambda
+        distort_fn = JPEGDistort(quality)
         ds = DistortedDataset(base_ds, distort_fn)
         loader = DataLoader(ds, batch_size=BATCH_SIZE,
                             num_workers=0, shuffle=False)
@@ -142,7 +142,7 @@ def run_robustness():
     # ── Resize искажения ──
     print("\n🔍  Resize Robustness:")
     for factor in RESIZE_FACTORS:
-        distort_fn = ResizeDistort(factor)         # класс вместо lambda
+        distort_fn = ResizeDistort(factor)
         ds = DistortedDataset(base_ds, distort_fn)
         loader = DataLoader(ds, batch_size=BATCH_SIZE,
                             num_workers=0, shuffle=False)

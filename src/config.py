@@ -23,7 +23,7 @@ BEST_MODEL_PATH = os.path.join(MODEL_DIR, "best.pt")
 # Данные
 # ──────────────────────────────────────────────
 IMAGE_SIZE   = 224          # размер входа модели
-BATCH_SIZE   = 32           # уменьши до 16 если нехватает VRAM
+BATCH_SIZE   = 32           # уменьшить до 16 если нехватает VRAM
 NUM_WORKERS  = 4            # потоки DataLoader (0 на Windows если ошибки)
 PIN_MEMORY   = True         # ускорение передачи на GPU
 
@@ -34,7 +34,7 @@ NUM_CLASSES  = 2
 # ──────────────────────────────────────────────
 # Модель
 # ──────────────────────────────────────────────
-MODEL_NAME   = "efficientnet_b0"  # из timm; можно попробовать efficientnet_b2
+MODEL_NAME   = "efficientnet_b0"
 
 # ──────────────────────────────────────────────
 # Обучение

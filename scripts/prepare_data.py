@@ -74,7 +74,7 @@ def get_label_from_path(image_path: str):
 
 
 def get_generator_from_path(image_path: str) -> str:
-    """Извлекает имя генератора (первая часть пути)."""
+    """Извлекает имя генератора."""
     return image_path.split("/")[0].lower()
 
 
